@@ -60,7 +60,7 @@ public class Main {
 
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // YOUR ANSWER HERE: 0(n) 
   public static int computeFactorial(int n) {
     int result = 1;
     for(int i = 1; i <= n; i++) {
@@ -81,7 +81,7 @@ public class Main {
 
   // assume that each String is bounded by a constant length
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // YOUR ANSWER HERE 0(n) 
   public static void checkIfContainedArrayList(ArrayList<String> arr, String target) {
     if (arr.contains(target)) {
         System.out.println(target + " is present in the list");
@@ -94,7 +94,7 @@ public class Main {
   // assume n = wordsA.length = wordsB.length
   // assume that each String is bounded by a constant length
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // YOUR ANSWER HERE 
   public static boolean containsOverlap(String[] wordsA, String[] wordsB) {
     for(String wordA : wordsA) {
         for(String wordB : wordsB) {
@@ -108,7 +108,7 @@ public class Main {
 
   // assume that each String is bounded by a constant length
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // YOUR ANSWER HERE: 0(n)
   public static boolean containsOverlap2(String[] wordsA, String[] wordsB) {
     Set<String> wordsSet = new HashSet<>();
     for(String word : wordsA) {
@@ -125,7 +125,7 @@ public class Main {
   }
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // YOUR ANSWER HERE 
   public static void printCharacters(char[] chars) {
     for (int i = 0; i < chars.length; i++) {
       char character = chars[i];
@@ -133,14 +133,14 @@ public class Main {
     }
   }
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // YOUR ANSWER HERE: 0(1)
   public static double computeAverage(double a, double b) {
     return (a + b) / 2.0;
   }
 
   // assume that each String is bounded by a constant length
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // YOUR ANSWER HERE 
   public static void checkIfContainedHashSet(HashSet<String> set, String target)
   {
     if (set.contains(target)) {
@@ -156,7 +156,7 @@ public class Main {
   // Otherwise, it returns "Person not found"
   // assume that each String is bounded by a constant length
   // What is the time complexity of this method?
-  // YOUR ANSWER HERE
+  // YOUR ANSWER HERE: 0(n) where n = the length of the names array
   public static String emailLookup(String[] names, String[] emails, String queryName) {
     for(int i = 0; i < names.length; i++) {
       if (names[i].equals(queryName)) {
@@ -180,7 +180,7 @@ public class Main {
   // What is the time complexity of this method?
   // assume that each String is bounded by a constant length
   // (assume the set and list have the same number of elements)
-  // YOUR ANSWER HERE
+  // YOUR ANSWER HERE: O(n) where n = length of the wordset
   public static boolean hasCommon(HashSet<String> wordSet, ArrayList<String> wordList) {
     for(String word : wordSet) {
       if(wordList.contains(word)) {
@@ -193,7 +193,7 @@ public class Main {
   // Do not change the datatype of wordSet or wordList.
   // assume that each String is bounded by a constant length
   // What is the time complexity of your new solution?
-  // YOUR ANSWER HERE
+  // YOUR ANSWER HERE 
   public static boolean hasCommonEfficient(HashSet<String> wordSet, ArrayList<String> wordList) {
     return false;
   }
