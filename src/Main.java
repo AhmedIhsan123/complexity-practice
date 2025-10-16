@@ -17,7 +17,7 @@ public class Main {
   }
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // YOUR ANSWER HERE 0(n) n= length of the letters array
   public static void printLetters(String word) {
     char[] letters = word.toCharArray();
 
